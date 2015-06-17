@@ -69,7 +69,8 @@ run_analysis <- function() {
   outputframe <- mutate(outputframe,activity = newactivity)
   outputframe <- select(outputframe,-c(activitysubjgrp,activityNUM))
   
-  # output the requested data table
+  # writes the data table to a file and output the requested data table
+  write.table(outputframe,"tidydata.txt",row.name=FALSE)
   outputframe
   
        
