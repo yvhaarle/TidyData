@@ -1,16 +1,16 @@
 # Codebook
 
-This file contains a table with all the variables, their units and a description.
+This file contains a table with all the variables, their units and a description that are listed in the output of run_analysis.R
 
 Important notes:
-* All variables - except "subject" and "activity" - are unitless because the data has been normalised into a range between -1 and 1.  
-* All variables - except "subject" and "activity" - are averages taken for the activity and the subject (see also README.md) 
-* see also features_info.txt in the unzipped data set after running run_analysis.R script
+* All variables are unitless. The variables starting with "t" or "f" have been normalised into a range between -1 and 1.    
+* All variables (except "subject" and "activity")  are averages taken for the "activity" and the "subject" listed in the same row (see also README.md)  
+* See also features_info.txt in the unzipped data set after running run_analysis.R script
 
 Variable name | description
 --------------|------------
-subject | Number of the subject that performed the activity [1-30]    
-activity | The activity performed (self explanatory)
+subject | Label (number) of the subject that performed the activity [1-30]    
+activity | String describing the activity performed (self explanatory)
 tBodyAcc-mean()-X | Mean of body accelerometer signals in the X direction: 50 Hz time domain accelerometer signals that were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. This signal was split into body (used here) and gravity acceleration signals using another low pass Butterworth filter.  
 tBodyAcc-mean()-Y | Mean of body accelerometer signals in the Y direction: 50 Hz time domain accelerometer signals that were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. This signal was split into body (used here) and gravity acceleration signals using another low pass Butterworth filter.
 tBodyAcc-mean()-Z | Mean of body accelerometer signals in the Z direction: 50 Hz time domain accelerometer signals that were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. This signal was split into body (used here) and gravity acceleration signals using another low pass Butterworth filter.
