@@ -41,7 +41,7 @@ run_analysis <- function() {
   feature_std_idx <- grep("std",features_labels$V2) 
   feature_select_idx <- sort(c(feature_mean_idx,feature_std_idx))
   feature_select_names <- features_labels$V2[feature_select_idx]
-  #3c  read in test and mtrain data 
+  #3c  read in test and training data 
   features_data_test <- read.table("./UCI HAR Dataset/test/X_test.txt",col.names=features_labels$V2,check.names = FALSE)
   features_data_train <- read.table("./UCI HAR Dataset/train/X_train.txt",col.names=features_labels$V2,check.names = FALSE)
   features_data <- rbind(features_data_test, features_data_train)
